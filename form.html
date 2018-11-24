@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang=pt-br dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formularios</title>
+    <style tipe="text/css">
+    body{
+      background-color: #a900ff4d
+    }
+    </style>
+  </head>
+
+  <body>
+    <fieldset>
+    <form action="https://www.google.com/search?" method="get">
+    <br><br> <label for="q"> Pesquisar: </label>
+    <input type="search" name="q" required pattern="(?=.*\d)(?=.*[a-z])">
+    <input type="image" src ="https://png2.kisspng.com/sh/9ff38311e31d4f7d6f9f724c38c8b2a3/L0KzQYm3WcE0N6Fte5H0aYP2gLBuTgBweqVmet5uLX7ohMj2kvsub6NmiNpyY4OwfbLujvlngZpzf59wbHH2g37qjPlxNZJ3RadrOXG3dYOBVcIyOZY3RqI5NUC2SYm5UcU0Pmk4UaQ5OEO2RoO1kP5o/kisspng-portable-network-graphics-magnifying-glass-clip-ar-5b9a4e285211e2.0050398215368392083362.png" width= "20" height= "20" value="">
+    <input type="reset" value="Limpar">
+    <br> <br> <label for="email"> Email: </label>
+    <input type="email" name="email" autocomplete="on">
+		<br> <br> <label for="numero"> Numero: </label>
+    <input type="number" name="numero" min="0" max="100" step="2">
+		<br> <br> <label for="range"> Range: </label>
+    <input type="range" name="range" min="0" max="10">
+		<br> <br> <label for="data"> Data: </label>
+    <input type="datetime-local" name="data">
+		<br> <br> <label for="cor"> Cor: </label>
+    <input type="color" name="cor">
+
+		<input type="reset" name="limpar" value="Limpar">
+    </br>
+   </fieldset>
+<p>
+    <fieldset>
+    <br><h4>Você deseja trabalhar como Webmaster?</h4>
+    <input type="radio" name="tiporadio" value="Sim" >Sim
+    <input type="radio" name="tiporadio" value="Nao" >Não
+    <input type="radio" name="tiporadio" value="Talvez" >Talvez
+    <input type="radio" name="tiporadio" value="Quem sabe" >Quem sabe
+    </br>
+  </fieldset>
+<p>
+  <fieldset>
+  <br><h4>O que você deseja aprender?</h4>
+  <input type="checkbox" name="tipocheckbox" value="HTML">HTML
+  <input type="checkbox" name="tipocheckbox" value="CSS">CSS
+  <input type="checkbox" name="tipocheckbox" value="JavaScript">JavaScript
+  <input type="checkbox" name="tipocheckbox" value="PHP">PHP
+</br>
+</fieldset>
+<p>
+  <fieldset>
+<br><h4>Menu DropDown</h4>
+		<select>
+			<optgroup label="Linguagens para WEB">
+				<option value="HTML">HTML</option>
+				<option value="CSS">CSS</option>
+				<option value="JS">JS</option>
+				<option value="PHP">PHP</option>
+			</optgroup>
+			<optgroup label="Linguagens para Desktop">
+				<option value="C">C</option>
+				<option value="C++">C++</option>
+				<option value="JAVA">JAVA</option>
+			</optgroup>
+      </select>
+</br>
+</fieldset>
+<p>
+  <fieldset>
+<br><h4>Caixa de Lista</h4>
+		<select size="7" multiple="multiple">
+			  <optgroup label="Linguagens para WEB">
+				<option value="HTML">HTML</option>
+				<option value="CSS">CSS</option>
+				<option value="JS">JS</option>
+				<option value="PHP">PHP</option>
+			  </optgroup>
+			  <optgroup label="Linguagens para Desktop">
+				<option value="C">C</option>
+				<option value="C++">C++</option>
+				<option value="JAVA">JAVA</option>
+			 </optgroup>
+		</select>
+  </br>
+</fieldset>
+
+</form>
+  </body>
+  </html>
