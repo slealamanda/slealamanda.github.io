@@ -1,23 +1,54 @@
-ul{
-margin: 1;
-padding: 0;
-list-style: none;
-width: 240px;
+*{
+	margin: 0;
+	padding: 0; 
 }
- ul li a{
- display: block;
- text-decoration: none;
- color: black;
- background: #f2f2f2;
- padding: 20px;
- border: 1px solid #ccc;
- font-size: 30px;
+ul{
+	list-style: none;
+	width: 240px; /*150*/
+	margin-left: 15px;
+}
+ul li a{
+	display: block;
+	margin-top: 5px;
+	border: 1px solid #ccc;
+	font-size: 25px; /*15*/
  font-family: 'Roboto', sans-serif;
- text-align: left;
- margin-top: 3px;
- }
- ul li a:hover{
-   text-decoration:underline;
+	padding: 25px; /*15*/
+	background-color: #f8f8f8;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+}
+ul li a:hover{
    font-weight: bold;
-   background: #ccc;
- }
+   background:#ccc;
+}
+#menu {
+	float: left;
+}
+#artigo {
+	font-size: 18px;
+	border-left: 1px solid black;
+	margin-left: 265px;
+	padding: 20px;
+	height: 500px;
+}
+#cabecalho{
+	margin: 5px;
+	padding: 5px;
+	background-color: gray;
+	color: white;
+	font-size: 25px;
+	margin-top: 5px;
+}
+#rodape {
+	background-color: gray;
+	color: white;
+	padding: 5px;
+	margin-top: 70px;
+	margin-left: 5px;
+	position: absolute;
+	left: 0;
+	display: inline;
+	width: 100%;
+}
