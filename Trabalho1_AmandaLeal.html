@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Primeiro trabalho</title>
+
+  </head>
+
+  <body>
+    <p id="conteudo_1">[1] Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero.
+      Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et,
+      luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum
+      elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing
+      ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      Duis scelerisque.</p>
+    <a id="enlace_1" href="#" onclick="aparecer_1()">Ocultar Conteúdo</a>
+
+    <br>
+
+    <p id="conteudo_2">[2] Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero.
+      Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et,
+      luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum
+      elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing
+      ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      Duis scelerisque.</p>
+    <a id="enlace_2" href="#" onclick="aparecer_2()">Ocultar Conteúdo</a>
+
+    <br>
+    <p id="conteudo_3">[3] Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero.
+      Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et,
+      luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum
+      elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing
+      ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      Duis scelerisque.</p>
+    <a id="enlace_3" href="#" onclick="aparecer_3()">Ocultar Conteúdo</a>
+  </body>
+
+  <script type="text/javascript">
+  function aparecer_1() {
+    var enlace_1 = document.getElementById('conteudo_1');
+    var cont_1 = document.getElementById('enlace_1');
+
+    enlace_1.style.display = enlace_1.style.display === 'none' ? '' : 'none';
+
+     if (cont_1.innerHTML=="Mostrar Conteúdo"){
+    	cont_1.innerHTML="Ocultar Conteúdo";
+    } else {
+    	cont_1.innerHTML="Mostrar Conteúdo";
+    }
+  }
+
+  function aparecer_2() {
+      var enlace_2 = document.getElementById('conteudo_2');
+      var cont_2 = document.getElementById('enlace_2');
+
+      enlace_2.style.display = enlace_2.style.display === 'none' ? '' : 'none';
+
+       if (cont_2.innerHTML=="Mostrar Conteúdo"){
+    	cont_2.innerHTML="Ocultar Conteúdo";
+    } else {
+    	cont_2.innerHTML="Mostrar Conteúdo";
+    }
+  }
+
+  function aparecer_3() {
+      var enlace_3 = document.getElementById('conteudo_3');
+      var cont_3 = document.getElementById('enlace_3');
+
+      enlace_3.style.display = enlace_3.style.display === 'none' ? '' : 'none';
+
+       if (cont_3.innerHTML=="Mostrar Conteúdo"){
+    	cont_3.innerHTML="Ocultar Conteúdo";
+    } else {
+    	cont_3.innerHTML="Mostrar Conteúdo";
+}
+}
+  </script>
+</html>

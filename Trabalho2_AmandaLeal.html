@@ -1,0 +1,54 @@
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+
+    <head>
+      <meta charset="utf-8">
+      <title>Segundo trabalho</title>
+
+    </head>
+
+    <body>
+        <div id = "List">
+          <ul>
+            <li>Lista 1</li>
+            <li>Lista 2</li>
+            <li>Lista 3</li>
+          </ul>
+        </div>
+<br>
+
+      <div id = "Text_box">
+           <input type="text" id="Inserir" name="inserir"/>
+           <button type="submit" onclick="adicionar()"> Adicionar </button>
+      </div>
+
+      <br>
+
+      <div id = "Imagens">
+            <img id="lamp_off" src="lampada_off.gif" onmousedown="clicar()" onmouseup="apagar()"/>
+      </div>
+
+        <script type="text/javascript">
+        function adicionar(){
+          var adic = document.getElementById('Inserir');
+          var lista = document.getElementById('List');
+
+          lista.innerHTML = lista.innerHTML + "<li>" +adic.value+  "</li>";
+        }
+
+
+       function clicar(){
+          document.getElementById('lamp_off').src = "lampada_on.gif";
+
+        }
+        function apagar(){
+           document.getElementById('lamp_off').src = "lampada_off.gif";
+
+         }
+
+
+
+        </script>
+
+    </body>
+    </html>
